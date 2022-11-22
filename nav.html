@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nav</title>
+    <link rel="stylesheet" href="nav.css">
+</head>
+<body>
+    <header>
+        <a href="#" class="logo"><img src="./images/Logo2.png" alt="" class="imgsi"><img src="./images/Logonegro.png" alt="" class="imgnot"></a>
+        <div class="icon nav-icon-6">
+            <span></span>
+            <span></span>
+            <span></span>
+           </div> 
+        <ul>
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Sobre Nosotros</a></li>
+            <li><a href="#">Modelo</a></li>
+            <li><a href="#">Equipo</a></li>
+            <li><a href="#">Contacto</a></li>
+        </ul>
+        <section class="banner"></section>
+    </header>
+    <script type="text/javascript"> 
+    window.addEventListener("scroll", function(){
+        var header = document.querySelector("header"); 
+        header.classList.toggle("sticky", window.scrollY > 0);
+    })
+    </script>
+</body>
+</html>
