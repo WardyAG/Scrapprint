@@ -14,15 +14,16 @@
     <!-- swiper CSS -->
     <link rel="stylesheet" href="swiper-bundle.min.css" />
 </head>
-<body >
-<div class="container">
-  
-    <section>
+<body class="container">
+    <section id="inicio">
+
+
+
     <header class="hero ">
+
           <nav> 
-           <div class="logo"><img src="./images/Logo.png" alt=""><a href="#">scrapprint</a></div>
+           <div class="logo"><img src="./images/Logo.png" alt=""><a href="#inicio">scrapprint</a></div>
            <div class="icon nav-icon-6">
-            <!-- Responsive -->
             <span></span>
             <span></span>
             <span></span>
@@ -58,8 +59,11 @@
             <h1 class="subtitle">Sobre Nosotros</h1>
             <div class="raya"></div>
 
-            <div class="us-info">
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto delectus corrupti veritatis nisi quae esse a consequuntur dolorem, dignissimos vero facilis veniam animi, quos modi voluptas corporis aspernatur officiis eligendi.</p>
+            <div class="info-us">
+              
+              <div class="us-info">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto delectus corrupti veritatis nisi quae esse a consequuntur dolorem, dignissimos vero facilis veniam animi, quos modi voluptas corporis aspernatur officiis eligendi.</p>
+              </div>
             </div>
             
             <div class="card-container">
@@ -133,7 +137,7 @@
     </div>
 
     <section class="equipo">
-        <div class="container1 swiper">
+        <div class="container swiper">
             <div class="slide-container">
               <div class="card-wrapper swiper-wrapper">
                 <div class="card swiper-slide">
@@ -299,25 +303,62 @@
             <div class="raya"></div>
             <div class="card-container"></div>
            
-            <form class="contact-form" name="contact" method="POST" data-netlify="true">
-              <input type="text" class="contact-form-text" placeholder="Nombre" name="name">
-              <input type="email" class="contact-form-text" placeholder="Email" name="email">
-              <input type="text" class="contact-form-text" placeholder="Telefono" name="message">
-              <textarea class="contact-form-text" placeholder="Mensaje" name="message"></textarea>
+            <form class="contact-form" action="index.html" method="post">
+              <input type="text" class="contact-form-text" placeholder="Nombre">
+              <input type="email" class="contact-form-text" placeholder="Email">
+              <input type="text" class="contact-form-text" placeholder="Telefono">
+              <textarea class="contact-form-text" placeholder="Mensaje"></textarea>
               <div class="div-contact-form-btn">
               <input type="submit" class="contact-form-btn" value="Enviar">
               </div>
             </form>
 
-              <div class="contact-info">
-                <div><i class="fas fa-map-marker-alt"></i>Av. Gustavo Mejia Ricart </div>
-                <div><i class="fas fa-envelope"></i>srapprint@gmail.com</div>
-                <div><i class="fas fa-phone"></i>(809)-669-5542</div>
-                <div><i class="fas fa-clock"></i>Lun - Sab 8:00 AM to 8:00 PM</div>
-            </div>
+            
+          
     </section>
-</div>
 
+    <footer>
+      <div class="pie-pagina ">
+        <div class="grupo-1">
+          <div class="box">
+              <figure>
+                  <a href="#">
+                      <img src="/images/Eslogan.png" alt="Logo de SLee Dw">
+                  </a>
+              </figure>
+          </div>
+          <div class="box">
+              <h2>Compañia</h2>
+              <ul class="footer-menu">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#about">Sobre Nosotros</a></li>
+                <li><a href="#modelo">Modelo</a></li>
+                <li><a href="#equipo">Equipo</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+                <li><a href="./proceso.html">Proceso</a></li>
+
+              </ul>
+          </div>
+          <div class="box">
+              <h2>Nosotros</h2>
+              <div class="red-social">
+                <div class="contact-info">
+                  <div><i class="fas fa-map-marker-alt"></i><p>Av. Gustavo Mejia Ricart</p></div>
+                  <div><i class="fas fa-envelope"></i><p>srapprint@gmail.com</p></div>
+                  <div><i class="fas fa-phone"></i><p>(809)-669-5542</p></div>
+                  <div><i class="fas fa-clock"></i><p>Lun - Sab 8:00 AM to 8:00 PM</p></div>
+                </div>
+              </div>
+          </div>
+      </div>
+      <div class="grupo-2">
+          <small>&copy; 2022 <b>Scrapprint</b> - Todos los Derechos Reservados. att. ws</small>
+      </div>
+      </div>
+    </footer>
+
+
+      
     
     <script type="text/javascript" src="vanilla-tilt.js"></script>
     <script type="text/javascript"> 
@@ -334,8 +375,6 @@
             nav.classList.toggle("active");
         }
     </script>
-    
 
 </body>
-
 </html>
