@@ -9,10 +9,12 @@
 
     <link rel="shortcut icon" href="/images/Logo.png" type="image/x-icon">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="/animate.min.css">
     <script src="https://kit.fontawesome.com/ea92af1530.js" crossorigin="anonymous"></script>
     <script src="https://code.iconify.design/iconify-icon/1.0.1/iconify-icon.min.js"></script>
     <!-- swiper CSS -->
     <link rel="stylesheet" href="swiper-bundle.min.css" />
+    
 </head>
 <body class="container">
     <section id="inicio">
@@ -29,7 +31,7 @@
             <span></span>
            </div> 
 
-           <ul class="nav-menu">
+           <ul class="nav-menu ">
               <li><a href="#inicio">Inicio</a></li>
               <li><a href="#about">Sobre Nosotros</a></li>
               <li><a href="#modelo">Modelo</a></li>
@@ -42,19 +44,19 @@
         
     
         <div class="hero-content ">
-                <div class="hero-texts">
+                <div class="hero-texts animate__animated animate__slideInUp">
                   <h1><span>Leinster</span> RX 400</h1>
                   <p>Somos una empresa nueva, eficaz e innovadora dedicada al diseño y produccion </p>
                   <a href="">Leer mas</a>
                 </div>
           <div class="hero-video">
-            <img src="./images/jakub-kusyk-druk-3d-cv-animacja.gif" alt="">
+            <img src="./images/jakub-kusyk-druk-3d-cv-animacja.gif" alt="" class="animate__animated animate__backInDown">
           </div>
         </div>
     </section>
     </header>
 
-    <section id="about">
+    <section id="about" class="wow fadeOut">
         <div class="about">
             <h1 class="subtitle">Sobre Nosotros</h1>
             <div class="raya"></div>
@@ -304,10 +306,10 @@
             <div class="card-container"></div>
            
             <form class="contact-form" action="index.html" method="post">
-              <input type="text" class="contact-form-text" placeholder="Nombre">
-              <input type="email" class="contact-form-text" placeholder="Email">
-              <input type="text" class="contact-form-text" placeholder="Telefono">
-              <textarea class="contact-form-text" placeholder="Mensaje"></textarea>
+              <input type="text" class="contact-form-text" placeholder="Nombre" name="name">
+              <input type="email" class="contact-form-text" placeholder="Email" name="email">
+              <input type="text" class="contact-form-text" placeholder="Telefono" name="message">
+              <textarea class="contact-form-text" placeholder="Mensaje"  name="message"></textarea>
               <div class="div-contact-form-btn">
               <input type="submit" class="contact-form-btn" value="Enviar">
               </div>
@@ -375,6 +377,9 @@
             nav.classList.toggle("active");
         }
     </script>
-
+     <script src="/wow.min.js"></script>
+     <script>
+     new WOW().init();
+     </script>
 </body>
 </html>

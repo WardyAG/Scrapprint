@@ -38,6 +38,11 @@ html::-webkit-scrollbar-track:hover {
 }
 
 
+.animate__animated.animate__slideInUp {
+  --animate-duration: .5s;
+  
+}
+
 body{
     display: flex;
     flex-direction: column;
