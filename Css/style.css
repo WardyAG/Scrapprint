@@ -11,10 +11,30 @@
   src: url(./Letra/Tumbly\ A.otf);
 }
 
+section[id] {
+  scroll-margin-top: 100px;
+}
+
+#inicio{
+  scroll-margin-top: 200px;
+
+}
+
+#equipo{
+  scroll-margin-top: 95px;
+}
+
+#contacto{
+  scroll-margin-top: 50px;
+
+}
+
 /*scroll bar*/
 html {
   scrollbar-width: normal;
   scrollbar-color: #777 #555;
+  scroll-behavior: smooth;
+
 }
 
 html::-webkit-scrollbar {
@@ -43,18 +63,14 @@ html::-webkit-scrollbar-track:hover {
   
 }
 
-body{
-    display: flex;
-    flex-direction: column;
-    background-color: #161623;
-    color: #fff;
-    gap: 65px;
-}
 
 .container{
     max-width: 1100px;
     margin: auto;
+    background-color: #161623;
+    color: #fff;
 }
+
 
 /* Nav */
 
@@ -274,6 +290,7 @@ nav.sticky .logo img{
 
 .about-info{
   margin-bottom: 50px;
+  margin-top: 65px;
 }
 
 .subtitle{
@@ -372,9 +389,14 @@ nav.sticky .logo img{
 
 /* Modelo */
 
+#modelo{
+  margin-top: 100px;
+}
+
+
 .modelo-content{
   display: flex;
-  margin-top: 50px;
+  margin-top: 30px;
 }
 
 .content-text h1{
@@ -516,13 +538,17 @@ nav.sticky .logo img{
 
 /* Equipo */
 
+.equipo{
+  margin-top: 65px;
 
+}
 
 .equipo-container{
   display: flex;
   align-items: center;
   justify-content: center;
   background: #161623;
+  
 }
 
 .equipo-title{
@@ -602,7 +628,8 @@ nav.sticky .logo img{
     background: #161623;
     background-size: cover;
     padding: 40px 0;
-    
+    margin-top: 65px;
+    margin-bottom: 30px;
   }
   .contact-section h1{
     text-align: center;
@@ -654,49 +681,21 @@ nav.sticky .logo img{
     background: #fd5a24;
   }
 
-/* Proceso */
 
-.proceso-nav{
-  width: 100;
-  padding: 5px 100px;
-  background: #2d2c38;
-  box-shadow: 20px 20px 50px rgb(0, 0,0,0.5 );
-  height: 75px;
-  backdrop-filter: blur(5px);
-}
-
-.proceso-nav .logo img{
-  max-height: 58px;
-  transition: .6s;
-}
-
-.title{
-  margin-top: 100px;
-}
-  
-.desingweb{
-  display: flex;
-  gap: 50px;
-}
-
-.web-img img{
-  max-width: 600px;
-}
-
-.web-text h1{
-  font-size: 35px;
-  font-weight: 600;
-}
   
 /* Foooter */
 
-/*:::::Pie de Pagina*/
+
+
 .pie-pagina{
-  position: absolute;
   width: 100%;
-  margin-left: -100px;
+  position: absolute;
   background-color: #2d2c38;
+  left: 0;
+  align-items: flex-end;
 }
+
+
 .pie-pagina .grupo-1{
   width: 100%;
   max-width: 1200px;
@@ -765,6 +764,88 @@ nav.sticky .logo img{
 }
 
 
+/* Proceso */
+
+.proceso{
+  background-color: #161623;
+  color: #fff;
+}
+
+
+.proceso-nav{
+  background: #2d2c38;
+  box-shadow: 20px 20px 50px rgb(0, 0,0,0.5 );
+  backdrop-filter: blur(5px);
+  height: 75px;
+}
+
+.info-gallery{
+  width: 500px;
+  height: 120px;
+  display: flex;
+  text-align: center;
+  margin: 40px 0 0 310px;
+  padding: 10px;
+  border: inset 2px #FF6836;
+  border-radius: 5px;
+  box-shadow: 2px 2px 2px #FF6836;
+  margin: auto;
+  margin-bottom: 20px;
+}
+
+.proceso-nav .logo img{
+  max-height: 58px;
+  transition: .6s;
+}
+
+.title{
+  margin-top: 100px;
+  margin-bottom: 20px;
+}
+  
+.desingweb{
+  display: flex;
+  gap: 50px;
+}
+
+.web-img img{
+  max-width: 600px;
+}
+
+.web-text h1{
+  font-size: 35px;
+  font-weight: 600;
+}
+
+
+.grid-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: #03afff;
+  border-radius: 4px;
+  transition: transform 0.3s ease-in-out;
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.grid-item:hover {
+  filter: opacity(0.9);
+  transform: scale(1.04);
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-auto-rows: minmax(200px, auto);
+  gap: 20px;
+  padding: 20px;
+  grid-auto-flow: dense;
+}
+
 
 @media screen and (max-width: 991px) {
     .swiper-navBtn {
@@ -776,7 +857,7 @@ nav.sticky .logo img{
         padding: 20px;
     }
     .nav-menu{
-        height: 250px;
+        height: 300px;
         position: absolute;
         top: 80px;
         left: 0;
@@ -787,6 +868,7 @@ nav.sticky .logo img{
         overflow: hidden;
         opacity: 0;
     }
+    
     .nav-menu{
         display: block;
         width: 100%;
@@ -843,10 +925,14 @@ nav.sticky .logo img{
     }
 
     /* about */
+    .info-us{
+      margin-top: 20px;
+    }
     .us-info{
         width: 300px;
         height: 400px;
-        margin-left: 46px;
+        padding-top: 20px;
+        margin: auto;
       }
     
     /* Modelo */
@@ -885,6 +971,12 @@ nav.sticky .logo img{
       
     }
 
+    
+    .especificaciones-info img{
+      max-width: 350px;
+      
+    }
+
       
 
     /*contact*/
@@ -916,4 +1008,26 @@ nav.sticky .logo img{
     display: flex;
     justify-content: center;
   }
+
+  /* Proceso */
+
+  .info-gallery{
+    width: 300px;
+    height: 220px;
+    margin: auto;
+  }
+    
+  
+
 }
+
+@media (min-width: 600px) {
+  .wide {
+    grid-column: span 2;
+  }
+
+  .tall {
+    grid-row: span 2;
+  }
+}
+
